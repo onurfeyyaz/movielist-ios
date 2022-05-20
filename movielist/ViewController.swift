@@ -21,5 +21,22 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func register(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginViewController
+        controller.text = name_tfield.text
+        present(controller, animated: true)
+        if  name_tfield.text!.count >= 3 &&
+                email_tfield.text!.count >= 3 &&
+                password_tfield.text!.count >= 3 &&
+                repassword_tfield.text!.count >= 3 &&
+                password_tfield.text! == repassword_tfield!.text {
+            print("eşitler")
+            
+        }
+        else {
+            print("olmadı be gülüq")
+        }
+        
+    }
 }
 

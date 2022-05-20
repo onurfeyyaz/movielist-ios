@@ -13,6 +13,8 @@
 		DB5CC58A2836907D0025128A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5CC5882836907D0025128A /* Main.storyboard */; };
 		DB5CC58C2836907E0025128A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5CC58B2836907E0025128A /* Assets.xcassets */; };
 		DB5CC58F2836907E0025128A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5CC58D2836907E0025128A /* LaunchScreen.storyboard */; };
+		DBD8027A283851F7002164F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD80279283851F7002164F5 /* LoginViewController.swift */; };
+		DBD8027C283859C2002164F5 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8027B283859C2002164F5 /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DB5CC58B2836907E0025128A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5CC58E2836907E0025128A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5CC5902836907E0025128A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD80279283851F7002164F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBD8027B283859C2002164F5 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 		DB5CC5812836907D0025128A /* movielist */ = {
 			isa = PBXGroup;
 			children = (
+				DBD80279283851F7002164F5 /* LoginViewController.swift */,
 				DB5CC5822836907D0025128A /* AppDelegate.swift */,
 				DB5CC5842836907D0025128A /* SceneDelegate.swift */,
 				DB5CC5862836907D0025128A /* ViewController.swift */,
 				DB5CC5882836907D0025128A /* Main.storyboard */,
+				DBD8027B283859C2002164F5 /* MovieListViewController.swift */,
 				DB5CC58B2836907E0025128A /* Assets.xcassets */,
 				DB5CC58D2836907E0025128A /* LaunchScreen.storyboard */,
 				DB5CC5902836907E0025128A /* Info.plist */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD8027A283851F7002164F5 /* LoginViewController.swift in Sources */,
+				DBD8027C283859C2002164F5 /* MovieListViewController.swift in Sources */,
 				DB5CC5872836907D0025128A /* ViewController.swift in Sources */,
 				DB5CC5832836907D0025128A /* AppDelegate.swift in Sources */,
 				DB5CC5852836907D0025128A /* SceneDelegate.swift in Sources */,
