@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var email = " "
     var pass = " "
     
@@ -21,12 +21,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
     @IBAction func register(_ sender: Any) {
         //let controller = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginViewController
         //let loginVC = LoginViewController()
-    
+        
         if  name_tfield.text!.count >= 3 &&
                 email_tfield.text!.count >= 3 &&
                 password_tfield.text!.count >= 3 &&

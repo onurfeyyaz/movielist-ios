@@ -164,14 +164,29 @@
         <!--Movie List View Controller-->
         <scene sceneID="hVg-Br-fVm">
             <objects>
-                <viewController id="Lni-UD-FTW" customClass="MovieListViewController" customModule="movielist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieListVC" id="Lni-UD-FTW" customClass="MovieListViewController" customModule="movielist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tXD-wZ-2bI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p70-cm-FUT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CzM-ta-0mH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p70-cm-FUT" firstAttribute="leading" secondItem="CzM-ta-0mH" secondAttribute="leading" id="7to-1Z-WaJ"/>
+                            <constraint firstItem="CzM-ta-0mH" firstAttribute="trailing" secondItem="p70-cm-FUT" secondAttribute="trailing" id="SHm-E3-PIZ"/>
+                            <constraint firstItem="p70-cm-FUT" firstAttribute="top" secondItem="CzM-ta-0mH" secondAttribute="top" id="ZQv-2g-Ndb"/>
+                            <constraint firstItem="CzM-ta-0mH" firstAttribute="bottom" secondItem="p70-cm-FUT" secondAttribute="bottom" id="yOm-na-C2C"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MRY-xu-2SU"/>
+                    <connections>
+                        <outlet property="tableView" destination="p70-cm-FUT" id="P8k-hC-OfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IH-C2-wFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
