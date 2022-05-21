@@ -12,25 +12,30 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var albel: UILabel!
     @IBOutlet weak var remindButton: UIButton!
     
-    var text: String?
+    @IBOutlet weak var emailTField: UITextField!
+    @IBOutlet weak var passwordTField: UITextField!
+    
+    var email: String?
+    var password: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if text != nil {
-            albel.text = text
-        }
+        
+        albel.text = email! + " " + password!
         // Do any additional setup after loading the view.
     }
     
     @IBAction func remindMe(_ sender: UIButton) {
-        if  sender.isSelected {
-            print("seçildi")
-            sender.isSelected = false
+
+    }
+
+    @IBAction func login(_ sender: Any) {
+        if emailTField.text! == email && passwordTField.text! == password {
+            albel.text = "OKKKKK"
         }
         else {
-            sender.isSelected = true
-         print("seçilmedi")
+            albel.text = "NOT OKKK"
         }
-        print("asd")
     }
     
     /*
